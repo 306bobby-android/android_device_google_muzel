@@ -47,7 +47,7 @@ vendor/bin/hw/android.hardware.edgetpu.logging@service-edgetpu-logging
 vendor/bin/hw/android.hardware.gnss-service
 vendor/bin/hw/android.hardware.gnss-service.pixel
 vendor/bin/hw/android.hardware.gxp.logging@service-gxp-logging
-vendor/bin/hw/android.hardware.health-service.laguna
+vendor/bin/hw/android.hardware.health-service.laguna;RECOVERY_AVAILABLE
 vendor/bin/hw/android.hardware.input.processor-service
 vendor/bin/hw/android.hardware.memtrack-service.pixel
 vendor/bin/hw/android.hardware.neuralnetworks@service-darwinn-aidl
@@ -323,7 +323,7 @@ vendor/etc/init/android.hardware.contexthub-service.generic.rc
 vendor/etc/init/android.hardware.dumpstate.3-service.rc
 vendor/etc/init/android.hardware.edgetpu.logging@service-edgetpu-logging.rc
 vendor/etc/init/android.hardware.gxp.logging@service-gxp-logging.rc
-vendor/etc/init/android.hardware.health-service.laguna.rc
+-vendor/etc/init/android.hardware.health-service.laguna.rc;RECOVERY_AVAILABLE
 vendor/etc/init/android.hardware.input.processor-service.rc
 vendor/etc/init/android.hardware.neuralnetworks@service-darwinn-aidl.rc
 vendor/etc/init/android.hardware.oemlock-service.citadel.rc
@@ -483,7 +483,7 @@ vendor/etc/vintf/manifest/android.hardware.camera.provider@2.7-service-google-ap
 vendor/etc/vintf/manifest/android.hardware.contexthub-service.generic.xml
 vendor/etc/vintf/manifest/android.hardware.dumpstate.3-service.xml
 vendor/etc/vintf/manifest/android.hardware.gnss@lassen.xml
-vendor/etc/vintf/manifest/android.hardware.health-service.laguna.xml
+vendor/etc/vintf/manifest/android.hardware.health-service.laguna.xml;RECOVERY_AVAILABLE
 vendor/etc/vintf/manifest/android.hardware.neuralnetworks@service-darwinn-aidl.xml
 vendor/etc/vintf/manifest/android.hardware.oemlock-service.citadel.xml
 vendor/etc/vintf/manifest/android.hardware.samsung.uwb-service.xml
@@ -3326,8 +3326,8 @@ vendor/firmware/uecapconfig/lte_400907661.binarypb
 vendor/firmware/uecapconfig/lte_4017061044.binarypb
 vendor/firmware/uecapconfig/lte_4210990300.binarypb
 vendor/firmware/uecapconfig/lte_844857560.binarypb
-vendor/firmware/usb_phy_fw.bin
-vendor/firmware/usb_phy_fw_2.27.0.bin
+vendor/firmware/usb_phy_fw.bin;RECOVERY_AVAILABLE
+vendor/firmware/usb_phy_fw_2.27.0.bin;RECOVERY_AVAILABLE
 vendor/framework/com.google.android.camera.experimental2025.jar
 vendor/lib64/PixelVibratorFlagsL26.so
 vendor/lib64/android.hardware.authsecret-impl.nos.so
