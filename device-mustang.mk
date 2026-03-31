@@ -47,9 +47,14 @@ TARGET_VENDOR_PROP += $(DEVICE_PATH)/$(DEVICE_CODENAME)/vendor.prop
 
 # Recovery
 PRODUCT_COPY_FILES += \
-    $(DEVICE_PATH)/recovery/init.recovery.device.rc:$(TARGET_COPY_OUT_RECOVERY)/root/init.recovery.mustang.rc
+    $(DEVICE_PATH)/recovery/init.recovery.device.rc:$(TARGET_COPY_OUT_RECOVERY)/root/init.recovery.mustang.rc \
+    $(DEVICE_PATH)/recovery/blobs/usb_phy_fw.bin:$(TARGET_COPY_OUT_RECOVERY)/root/lib/firmware/usb_phy_fw.bin \
+    $(DEVICE_PATH)/recovery/blobs/usb_phy_fw_2.27.0.bin:$(TARGET_COPY_OUT_RECOVERY)/root/lib/firmware/usb_phy_fw_2.27.0.bin
 
 PRODUCT_PACKAGES += \
+    android.hardware.health-service.laguna_recovery \
+    android.hardware.health-service.laguna_recovery.rc \
+    android.hardware.health-service.laguna.recovery.xml \
     init.recovery.muzel.touch.rc
 
 # Satellite

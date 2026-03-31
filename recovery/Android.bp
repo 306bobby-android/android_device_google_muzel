@@ -3,6 +3,33 @@
 // SPDX-License-Identifier: Apache-2.0
 //
 
+cc_prebuilt_binary {
+    name: "android.hardware.health-service.laguna_recovery",
+    srcs: ["blobs/android.hardware.health-service.laguna_recovery"],
+    recovery: true,
+    strip: {
+        none: true,
+    },
+    check_elf_files: false,
+    relative_install_path: "hw",
+}
+
+prebuilt_etc {
+    name: "android.hardware.health-service.laguna_recovery.rc",
+    src: "blobs/android.hardware.health-service.laguna_recovery.rc",
+    sub_dir: "init",
+    recovery: true,
+}
+
+prebuilt_etc {
+    name: "android.hardware.health-service.laguna.recovery.xml",
+    src: "blobs/health_manifest.xml",
+    filename_from_src: false,
+    filename: "android.hardware.health-service.laguna.xml",
+    sub_dir: "vintf/manifest",
+    recovery: true,
+}
+
 prebuilt_etc {
     name: "init.recovery.muzel.touch.rc",
     src: "init.recovery.touch.rc",

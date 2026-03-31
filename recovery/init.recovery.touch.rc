@@ -1,2 +1,1 @@
-on init
-   insmod /lib/modules/syna_touch.ko
+# Synaptics touch is loaded via vendor_kernel_boot modules.load

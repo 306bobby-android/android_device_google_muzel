@@ -209,7 +209,3 @@ system_ext/bin/gs_watchdogd
 system_ext/etc/init/init.gs_watchdogd.rc
 
 # recovery partition
-
-# USB firmware
-vendor/firmware/usb_phy_fw.bin:recovery/lib/firmware/usb_phy_fw.bin
-vendor/firmware/usb_phy_fw_2.27.0.bin:recovery/lib/firmware/usb_phy_fw_2.27.0.bin
